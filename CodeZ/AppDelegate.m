@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CodeZTabBarController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    CodeZTabBarController * codeZTab = [[CodeZTabBarController alloc] init];
+    self.window.rootViewController = codeZTab;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

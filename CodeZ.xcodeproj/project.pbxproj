@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021557E2206B468A00B2F8BC /* MVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E1206B468A00B2F8BC /* MVCViewController.m */; };
+		021557E5206B46E200B2F8BC /* MVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E4206B46E200B2F8BC /* MVCView.m */; };
+		021557E8206B46EC00B2F8BC /* MVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E7206B46EC00B2F8BC /* MVCModel.m */; };
+		02251FE31E9B6CEA000B3910 /* WebOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02251FE21E9B6CEA000B3910 /* WebOCViewController.m */; };
+		02502BDD1E66BE1100BAE946 /* HQNavTwoBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 02502BDC1E66BE1100BAE946 /* HQNavTwoBarItem.m */; };
+		02CCEBC11F74E6C4002C0638 /* CZNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CCEBC01F74E6C4002C0638 /* CZNotificationManager.m */; };
+		02CF409A1E1B944400FAD7A3 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CF40991E1B944400FAD7A3 /* CustomTableViewController.m */; };
+		02CF409F1E1B980200FAD7A3 /* DynamicHeightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CF409E1E1B980200FAD7A3 /* DynamicHeightTableViewCell.m */; };
+		02D4F1431E28A75000B88005 /* CodeZTransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D4F1421E28A75000B88005 /* CodeZTransitionAnimation.m */; };
+		02D4F1461E28AB3F00B88005 /* CZDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D4F1451E28AB3F00B88005 /* CZDetailViewController.m */; };
+		02DA964D1E237F44004AD4F9 /* CZUIAnimateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DA964C1E237F44004AD4F9 /* CZUIAnimateViewController.m */; };
+		02DA96501E238030004AD4F9 /* CZRotateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DA964F1E238030004AD4F9 /* CZRotateView.m */; };
 		02DCB7B21E027B0B007AA1DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DCB7B11E027B0B007AA1DE /* main.m */; };
 		02DCB7B51E027B0B007AA1DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DCB7B41E027B0B007AA1DE /* AppDelegate.m */; };
 		02DCB7B81E027B0B007AA1DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DCB7B71E027B0B007AA1DE /* ViewController.m */; };
@@ -15,6 +27,19 @@
 		02DCB7C01E027B0B007AA1DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02DCB7BE1E027B0B007AA1DE /* LaunchScreen.storyboard */; };
 		02DCB7CB1E027B0B007AA1DE /* CodeZTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DCB7CA1E027B0B007AA1DE /* CodeZTests.m */; };
 		02DCB7D61E027B0B007AA1DE /* CodeZUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DCB7D51E027B0B007AA1DE /* CodeZUITests.m */; };
+		02E739431E121DE400C3F79C /* CodeZBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E739321E121DE400C3F79C /* CodeZBaseController.m */; };
+		02E739441E121DE400C3F79C /* CodeZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E739341E121DE400C3F79C /* CodeZNavigationController.m */; };
+		02E739451E121DE400C3F79C /* CodeZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E739361E121DE400C3F79C /* CodeZTabBarController.m */; };
+		02E739471E121DE400C3F79C /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E7393E1E121DE400C3F79C /* SettingController.m */; };
+		02E7394B1E121E5900C3F79C /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E7394A1E121E5900C3F79C /* HomeController.m */; };
+		02E7394E1E121E6100C3F79C /* RotateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E7394D1E121E6100C3F79C /* RotateViewController.m */; };
+		02E739511E121EA700C3F79C /* KTOneFingerRotationGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E739501E121EA700C3F79C /* KTOneFingerRotationGestureRecognizer.m */; };
+		02E9EB891E24C45E00EDF743 /* CZRotationMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E9EB881E24C45E00EDF743 /* CZRotationMenu.m */; };
+		02EE04981E9F225100EC5EAC /* CZGestureRecognizerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02EE04971E9F225000EC5EAC /* CZGestureRecognizerManager.m */; };
+		02F54DBB1E67C0BA00360884 /* CodeZBundleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 02F54DBA1E67C0BA00360884 /* CodeZBundleData.m */; };
+		02FA05A51E667ECE005C2B83 /* HQNavigationBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FA05A41E667ECE005C2B83 /* HQNavigationBarItem.m */; };
+		02FA05A81E667EE6005C2B83 /* HQNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 02FA05A71E667EE6005C2B83 /* HQNavigationBar.m */; };
+		BF147D3721128658AB95D204 /* Pods_CodeZ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E990662C875E018C5291421 /* Pods_CodeZ.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +60,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		021557E0206B468A00B2F8BC /* MVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCViewController.h; sourceTree = "<group>"; };
+		021557E1206B468A00B2F8BC /* MVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCViewController.m; sourceTree = "<group>"; };
+		021557E3206B46E200B2F8BC /* MVCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCView.h; sourceTree = "<group>"; };
+		021557E4206B46E200B2F8BC /* MVCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCView.m; sourceTree = "<group>"; };
+		021557E6206B46EC00B2F8BC /* MVCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCModel.h; sourceTree = "<group>"; };
+		021557E7206B46EC00B2F8BC /* MVCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCModel.m; sourceTree = "<group>"; };
+		02251FE11E9B6CEA000B3910 /* WebOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOCViewController.h; sourceTree = "<group>"; };
+		02251FE21E9B6CEA000B3910 /* WebOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOCViewController.m; sourceTree = "<group>"; };
+		02502BDB1E66BE1100BAE946 /* HQNavTwoBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQNavTwoBarItem.h; sourceTree = "<group>"; };
+		02502BDC1E66BE1100BAE946 /* HQNavTwoBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQNavTwoBarItem.m; sourceTree = "<group>"; };
+		02CCEBBF1F74E6C4002C0638 /* CZNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZNotificationManager.h; sourceTree = "<group>"; };
+		02CCEBC01F74E6C4002C0638 /* CZNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZNotificationManager.m; sourceTree = "<group>"; };
+		02CF40981E1B944400FAD7A3 /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
+		02CF40991E1B944400FAD7A3 /* CustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableViewController.m; sourceTree = "<group>"; };
+		02CF409D1E1B980200FAD7A3 /* DynamicHeightTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DynamicHeightTableViewCell.h; path = ../Model/DynamicHeightTableViewCell.h; sourceTree = "<group>"; };
+		02CF409E1E1B980200FAD7A3 /* DynamicHeightTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DynamicHeightTableViewCell.m; path = ../Model/DynamicHeightTableViewCell.m; sourceTree = "<group>"; };
+		02D4F1411E28A75000B88005 /* CodeZTransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeZTransitionAnimation.h; sourceTree = "<group>"; };
+		02D4F1421E28A75000B88005 /* CodeZTransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeZTransitionAnimation.m; sourceTree = "<group>"; };
+		02D4F1441E28AB3F00B88005 /* CZDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZDetailViewController.h; sourceTree = "<group>"; };
+		02D4F1451E28AB3F00B88005 /* CZDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZDetailViewController.m; sourceTree = "<group>"; };
+		02DA964B1E237F44004AD4F9 /* CZUIAnimateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZUIAnimateViewController.h; sourceTree = "<group>"; };
+		02DA964C1E237F44004AD4F9 /* CZUIAnimateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZUIAnimateViewController.m; sourceTree = "<group>"; };
+		02DA964E1E238030004AD4F9 /* CZRotateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZRotateView.h; sourceTree = "<group>"; };
+		02DA964F1E238030004AD4F9 /* CZRotateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZRotateView.m; sourceTree = "<group>"; };
 		02DCB7AD1E027B0B007AA1DE /* CodeZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02DCB7B11E027B0B007AA1DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		02DCB7B31E027B0B007AA1DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +100,34 @@
 		02DCB7D11E027B0B007AA1DE /* CodeZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02DCB7D51E027B0B007AA1DE /* CodeZUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeZUITests.m; sourceTree = "<group>"; };
 		02DCB7D71E027B0B007AA1DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E739311E121DE400C3F79C /* CodeZBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeZBaseController.h; sourceTree = "<group>"; };
+		02E739321E121DE400C3F79C /* CodeZBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeZBaseController.m; sourceTree = "<group>"; };
+		02E739331E121DE400C3F79C /* CodeZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeZNavigationController.h; sourceTree = "<group>"; };
+		02E739341E121DE400C3F79C /* CodeZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeZNavigationController.m; sourceTree = "<group>"; };
+		02E739351E121DE400C3F79C /* CodeZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeZTabBarController.h; sourceTree = "<group>"; };
+		02E739361E121DE400C3F79C /* CodeZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeZTabBarController.m; sourceTree = "<group>"; };
+		02E7393D1E121DE400C3F79C /* SettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		02E7393E1E121DE400C3F79C /* SettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		02E739491E121E5900C3F79C /* HomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeController.h; sourceTree = "<group>"; };
+		02E7394A1E121E5900C3F79C /* HomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
+		02E7394C1E121E6100C3F79C /* RotateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateViewController.h; sourceTree = "<group>"; };
+		02E7394D1E121E6100C3F79C /* RotateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotateViewController.m; sourceTree = "<group>"; };
+		02E7394F1E121EA700C3F79C /* KTOneFingerRotationGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTOneFingerRotationGestureRecognizer.h; sourceTree = "<group>"; };
+		02E739501E121EA700C3F79C /* KTOneFingerRotationGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTOneFingerRotationGestureRecognizer.m; sourceTree = "<group>"; };
+		02E9EB871E24C45E00EDF743 /* CZRotationMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CZRotationMenu.h; path = ../Controller/CZRotationMenu.h; sourceTree = "<group>"; };
+		02E9EB881E24C45E00EDF743 /* CZRotationMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CZRotationMenu.m; path = ../Controller/CZRotationMenu.m; sourceTree = "<group>"; };
+		02EE04961E9F225000EC5EAC /* CZGestureRecognizerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZGestureRecognizerManager.h; sourceTree = "<group>"; };
+		02EE04971E9F225000EC5EAC /* CZGestureRecognizerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZGestureRecognizerManager.m; sourceTree = "<group>"; };
+		02F54DB91E67C0BA00360884 /* CodeZBundleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeZBundleData.h; sourceTree = "<group>"; };
+		02F54DBA1E67C0BA00360884 /* CodeZBundleData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeZBundleData.m; sourceTree = "<group>"; };
+		02F6850F1E1F435100B6C1CB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		02FA05A31E667ECE005C2B83 /* HQNavigationBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQNavigationBarItem.h; sourceTree = "<group>"; };
+		02FA05A41E667ECE005C2B83 /* HQNavigationBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQNavigationBarItem.m; sourceTree = "<group>"; };
+		02FA05A61E667EE6005C2B83 /* HQNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQNavigationBar.h; sourceTree = "<group>"; };
+		02FA05A71E667EE6005C2B83 /* HQNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQNavigationBar.m; sourceTree = "<group>"; };
+		3E990662C875E018C5291421 /* Pods_CodeZ.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeZ.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAD76E07F04F61AFF834436D /* Pods-CodeZ.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeZ.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CodeZ/Pods-CodeZ.debug.xcconfig"; sourceTree = "<group>"; };
+		E28ED8DDC848BE9D5B6D25ED /* Pods-CodeZ.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeZ.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeZ/Pods-CodeZ.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF147D3721128658AB95D204 /* Pods_CodeZ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +156,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02CCEBBE1F74E6AB002C0638 /* 全局通知 */ = {
+			isa = PBXGroup;
+			children = (
+				02CCEBBF1F74E6C4002C0638 /* CZNotificationManager.h */,
+				02CCEBC01F74E6C4002C0638 /* CZNotificationManager.m */,
+			);
+			path = "全局通知";
+			sourceTree = "<group>";
+		};
+		02CF409B1E1B978300FAD7A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				021557E6206B46EC00B2F8BC /* MVCModel.h */,
+				021557E7206B46EC00B2F8BC /* MVCModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		02CF409C1E1B978300FAD7A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02E9EB871E24C45E00EDF743 /* CZRotationMenu.h */,
+				02E9EB881E24C45E00EDF743 /* CZRotationMenu.m */,
+				02CF409D1E1B980200FAD7A3 /* DynamicHeightTableViewCell.h */,
+				02CF409E1E1B980200FAD7A3 /* DynamicHeightTableViewCell.m */,
+				02DA964E1E238030004AD4F9 /* CZRotateView.h */,
+				02DA964F1E238030004AD4F9 /* CZRotateView.m */,
+				021557E3206B46E200B2F8BC /* MVCView.h */,
+				021557E4206B46E200B2F8BC /* MVCView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		02DCB7A41E027B0B007AA1DE = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +196,8 @@
 				02DCB7C91E027B0B007AA1DE /* CodeZTests */,
 				02DCB7D41E027B0B007AA1DE /* CodeZUITests */,
 				02DCB7AE1E027B0B007AA1DE /* Products */,
+				AA55635BA94F1D651E279C74 /* Pods */,
+				DEE026212089C597C38C0361 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +214,10 @@
 		02DCB7AF1E027B0B007AA1DE /* CodeZ */ = {
 			isa = PBXGroup;
 			children = (
+				02E7392F1E121DE400C3F79C /* Base */,
+				02E739371E121DE400C3F79C /* Home */,
+				02E7393B1E121DE400C3F79C /* Setting */,
+				02E7393F1E121DE400C3F79C /* Tools */,
 				02DCB7B31E027B0B007AA1DE /* AppDelegate.h */,
 				02DCB7B41E027B0B007AA1DE /* AppDelegate.m */,
 				02DCB7B61E027B0B007AA1DE /* ViewController.h */,
@@ -110,6 +227,7 @@
 				02DCB7BE1E027B0B007AA1DE /* LaunchScreen.storyboard */,
 				02DCB7C11E027B0B007AA1DE /* Info.plist */,
 				02DCB7B01E027B0B007AA1DE /* Supporting Files */,
+				02F6850F1E1F435100B6C1CB /* PrefixHeader.pch */,
 			);
 			path = CodeZ;
 			sourceTree = "<group>";
@@ -140,6 +258,162 @@
 			path = CodeZUITests;
 			sourceTree = "<group>";
 		};
+		02E7392F1E121DE400C3F79C /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				02E739301E121DE400C3F79C /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		02E739301E121DE400C3F79C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				02E739311E121DE400C3F79C /* CodeZBaseController.h */,
+				02E739321E121DE400C3F79C /* CodeZBaseController.m */,
+				02E739331E121DE400C3F79C /* CodeZNavigationController.h */,
+				02E739341E121DE400C3F79C /* CodeZNavigationController.m */,
+				02E739351E121DE400C3F79C /* CodeZTabBarController.h */,
+				02E739361E121DE400C3F79C /* CodeZTabBarController.m */,
+				02D4F1411E28A75000B88005 /* CodeZTransitionAnimation.h */,
+				02D4F1421E28A75000B88005 /* CodeZTransitionAnimation.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		02E739371E121DE400C3F79C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				02CF409B1E1B978300FAD7A3 /* Model */,
+				02CF409C1E1B978300FAD7A3 /* View */,
+				02E739381E121DE400C3F79C /* Controller */,
+				02E739491E121E5900C3F79C /* HomeController.h */,
+				02E7394A1E121E5900C3F79C /* HomeController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		02E739381E121DE400C3F79C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				02E7394C1E121E6100C3F79C /* RotateViewController.h */,
+				02E7394D1E121E6100C3F79C /* RotateViewController.m */,
+				02CF40981E1B944400FAD7A3 /* CustomTableViewController.h */,
+				02CF40991E1B944400FAD7A3 /* CustomTableViewController.m */,
+				02DA964B1E237F44004AD4F9 /* CZUIAnimateViewController.h */,
+				02DA964C1E237F44004AD4F9 /* CZUIAnimateViewController.m */,
+				02D4F1441E28AB3F00B88005 /* CZDetailViewController.h */,
+				02D4F1451E28AB3F00B88005 /* CZDetailViewController.m */,
+				02251FE11E9B6CEA000B3910 /* WebOCViewController.h */,
+				02251FE21E9B6CEA000B3910 /* WebOCViewController.m */,
+				021557E0206B468A00B2F8BC /* MVCViewController.h */,
+				021557E1206B468A00B2F8BC /* MVCViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		02E7393B1E121DE400C3F79C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				02E7393C1E121DE400C3F79C /* Controller */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		02E7393C1E121DE400C3F79C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				02E7393D1E121DE400C3F79C /* SettingController.h */,
+				02E7393E1E121DE400C3F79C /* SettingController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		02E7393F1E121DE400C3F79C /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				02CCEBBE1F74E6AB002C0638 /* 全局通知 */,
+				02EE04951E9F222800EC5EAC /* 手势管理 */,
+				02F54DB81E67C09800360884 /* 自定义绑定数据与显示值 */,
+				02FA05A01E667EB5005C2B83 /* 自定义导航栏 */,
+				02E739401E121DE400C3F79C /* 旋转手势 */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		02E739401E121DE400C3F79C /* 旋转手势 */ = {
+			isa = PBXGroup;
+			children = (
+				02E7394F1E121EA700C3F79C /* KTOneFingerRotationGestureRecognizer.h */,
+				02E739501E121EA700C3F79C /* KTOneFingerRotationGestureRecognizer.m */,
+			);
+			path = "旋转手势";
+			sourceTree = "<group>";
+		};
+		02EE04951E9F222800EC5EAC /* 手势管理 */ = {
+			isa = PBXGroup;
+			children = (
+				02EE04961E9F225000EC5EAC /* CZGestureRecognizerManager.h */,
+				02EE04971E9F225000EC5EAC /* CZGestureRecognizerManager.m */,
+			);
+			path = "手势管理";
+			sourceTree = "<group>";
+		};
+		02F54DB81E67C09800360884 /* 自定义绑定数据与显示值 */ = {
+			isa = PBXGroup;
+			children = (
+				02F54DB91E67C0BA00360884 /* CodeZBundleData.h */,
+				02F54DBA1E67C0BA00360884 /* CodeZBundleData.m */,
+			);
+			path = "自定义绑定数据与显示值";
+			sourceTree = "<group>";
+		};
+		02FA05A01E667EB5005C2B83 /* 自定义导航栏 */ = {
+			isa = PBXGroup;
+			children = (
+				02FA05A11E667EB5005C2B83 /* HQNavigationBar */,
+				02FA05A21E667EB5005C2B83 /* HQNavigationBarItem */,
+				02502BDB1E66BE1100BAE946 /* HQNavTwoBarItem.h */,
+				02502BDC1E66BE1100BAE946 /* HQNavTwoBarItem.m */,
+			);
+			path = "自定义导航栏";
+			sourceTree = "<group>";
+		};
+		02FA05A11E667EB5005C2B83 /* HQNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				02FA05A61E667EE6005C2B83 /* HQNavigationBar.h */,
+				02FA05A71E667EE6005C2B83 /* HQNavigationBar.m */,
+			);
+			path = HQNavigationBar;
+			sourceTree = "<group>";
+		};
+		02FA05A21E667EB5005C2B83 /* HQNavigationBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				02FA05A31E667ECE005C2B83 /* HQNavigationBarItem.h */,
+				02FA05A41E667ECE005C2B83 /* HQNavigationBarItem.m */,
+			);
+			path = HQNavigationBarItem;
+			sourceTree = "<group>";
+		};
+		AA55635BA94F1D651E279C74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAD76E07F04F61AFF834436D /* Pods-CodeZ.debug.xcconfig */,
+				E28ED8DDC848BE9D5B6D25ED /* Pods-CodeZ.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DEE026212089C597C38C0361 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E990662C875E018C5291421 /* Pods_CodeZ.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +421,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 02DCB7DA1E027B0B007AA1DE /* Build configuration list for PBXNativeTarget "CodeZ" */;
 			buildPhases = (
+				7B75B35628B8C855C52025F6 /* [CP] Check Pods Manifest.lock */,
 				02DCB7A91E027B0B007AA1DE /* Sources */,
 				02DCB7AA1E027B0B007AA1DE /* Frameworks */,
 				02DCB7AB1E027B0B007AA1DE /* Resources */,
+				D782768360AB99D1DE9E428C /* [CP] Embed Pods Frameworks */,
+				5AD9CB5E4BC89E0A605B8DC7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,14 +545,86 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5AD9CB5E4BC89E0A605B8DC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeZ/Pods-CodeZ-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B75B35628B8C855C52025F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D782768360AB99D1DE9E428C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CodeZ/Pods-CodeZ-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		02DCB7A91E027B0B007AA1DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02EE04981E9F225100EC5EAC /* CZGestureRecognizerManager.m in Sources */,
+				02CF409A1E1B944400FAD7A3 /* CustomTableViewController.m in Sources */,
+				02E7394B1E121E5900C3F79C /* HomeController.m in Sources */,
+				02DA96501E238030004AD4F9 /* CZRotateView.m in Sources */,
+				02FA05A81E667EE6005C2B83 /* HQNavigationBar.m in Sources */,
+				02E739471E121DE400C3F79C /* SettingController.m in Sources */,
+				02E739431E121DE400C3F79C /* CodeZBaseController.m in Sources */,
+				02D4F1431E28A75000B88005 /* CodeZTransitionAnimation.m in Sources */,
+				02CF409F1E1B980200FAD7A3 /* DynamicHeightTableViewCell.m in Sources */,
+				02E7394E1E121E6100C3F79C /* RotateViewController.m in Sources */,
+				02E739451E121DE400C3F79C /* CodeZTabBarController.m in Sources */,
+				02D4F1461E28AB3F00B88005 /* CZDetailViewController.m in Sources */,
+				021557E8206B46EC00B2F8BC /* MVCModel.m in Sources */,
 				02DCB7B81E027B0B007AA1DE /* ViewController.m in Sources */,
+				02F54DBB1E67C0BA00360884 /* CodeZBundleData.m in Sources */,
+				02251FE31E9B6CEA000B3910 /* WebOCViewController.m in Sources */,
+				02502BDD1E66BE1100BAE946 /* HQNavTwoBarItem.m in Sources */,
 				02DCB7B51E027B0B007AA1DE /* AppDelegate.m in Sources */,
+				02CCEBC11F74E6C4002C0638 /* CZNotificationManager.m in Sources */,
+				02E9EB891E24C45E00EDF743 /* CZRotationMenu.m in Sources */,
+				021557E5206B46E200B2F8BC /* MVCView.m in Sources */,
+				02E739441E121DE400C3F79C /* CodeZNavigationController.m in Sources */,
+				021557E2206B468A00B2F8BC /* MVCViewController.m in Sources */,
+				02DA964D1E237F44004AD4F9 /* CZUIAnimateViewController.m in Sources */,
+				02E739511E121EA700C3F79C /* KTOneFingerRotationGestureRecognizer.m in Sources */,
 				02DCB7B21E027B0B007AA1DE /* main.m in Sources */,
+				02FA05A51E667ECE005C2B83 /* HQNavigationBarItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,8 +769,11 @@
 		};
 		02DCB7DB1E027B0B007AA1DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAD76E07F04F61AFF834436D /* Pods-CodeZ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeZ/PrefixHeader.pch";
 				INFOPLIST_FILE = CodeZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HQExample.CodeZ;
@@ -431,8 +783,11 @@
 		};
 		02DCB7DC1E027B0B007AA1DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E28ED8DDC848BE9D5B6D25ED /* Pods-CodeZ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeZ/PrefixHeader.pch";
 				INFOPLIST_FILE = CodeZ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HQExample.CodeZ;
@@ -505,6 +860,7 @@
 				02DCB7DC1E027B0B007AA1DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02DCB7DD1E027B0B007AA1DE /* Build configuration list for PBXNativeTarget "CodeZTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +869,7 @@
 				02DCB7DF1E027B0B007AA1DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		02DCB7E01E027B0B007AA1DE /* Build configuration list for PBXNativeTarget "CodeZUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +878,7 @@
 				02DCB7E21E027B0B007AA1DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
