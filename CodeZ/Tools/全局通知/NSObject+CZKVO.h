@@ -10,7 +10,7 @@
 
 @interface NSObject (CZKVO)
 
-+ (void)cz_addObserver:(NSObject *)observer forKey:(NSString *)key withBlock:(void(^)(id observerObject, NSString *observerKey, id oldValue, id newValue))observerBlock;
-+ (void)cz_removeObserver:(NSObject *)observer forKey:(NSString *)key;
+- (void)cz_addObserver:(NSObject *)observer forKey:(NSString *)key withBlock:(void(^)(id observerObject, NSString *observerKey, id oldValue, id newValue))observerBlock;
+- (void)cz_removeObserver:(NSObject *)observer forKey:(NSString *)key;
 
 @end

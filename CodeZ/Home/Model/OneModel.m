@@ -12,7 +12,7 @@
 @implementation OneModel
 
 + (BOOL)resolveInstanceMethod:(SEL)sel {
-    // 为当前类添加一个方法,参数占位符V@:
+    // 为当前类添加一个方法,参数占位符V@:等等
 //    class_addMethod(self, sel, (IMP)doThings, "");
     return YES;
 }

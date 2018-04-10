@@ -10,6 +10,7 @@
 #import "MVCModel.h"
 #import "MVCView.h"
 #import "OneModel.h"
+#import "NSObject+CZKVO.h"
 
 @interface MVCViewController () {
     MVCModel *model;
@@ -25,20 +26,23 @@
     OneModel *one = [[OneModel alloc] init];
     [one doRealThings];
     model = [[MVCModel alloc] init];
+    [model cz_addObserver:self forKey:@"title" withBlock:^(id observerObject, NSString *observerKey, id oldValue, id newValue) {
+        
+    }];
     model.title = @"现在";
     view = [[MVCView alloc] initWithFrame:CGRectMake(0, 40, 500, 500)];
     [self.view addSubview:view];
-    [model addObserver:self
-            forKeyPath:@"title"
-               options:NSKeyValueObservingOptionNew
-               context:nil];
-    model.title = @"hello";
+//    [model addObserver:self
+//            forKeyPath:@"title"
+//               options:NSKeyValueObservingOptionNew
+//               context:nil];
+//    model.title = @"hello";
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
-    if ([keyPath isEqualToString:@"title"]) {
-        [view updateText:change[NSKeyValueChangeNewKey]];
-    }
+//    if ([keyPath isEqualToString:@"title"]) {
+//        [view updateText:change[NSKeyValueChangeNewKey]];
+//    }
 }
 
 - (void)didReceiveMemoryWarning {
