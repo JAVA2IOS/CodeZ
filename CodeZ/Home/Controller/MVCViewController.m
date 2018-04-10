@@ -9,6 +9,7 @@
 #import "MVCViewController.h"
 #import "MVCModel.h"
 #import "MVCView.h"
+#import "OneModel.h"
 
 @interface MVCViewController () {
     MVCModel *model;
@@ -21,6 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    OneModel *one = [[OneModel alloc] init];
+    [one doRealThings];
     model = [[MVCModel alloc] init];
     model.title = @"现在";
     view = [[MVCView alloc] initWithFrame:CGRectMake(0, 40, 500, 500)];
@@ -34,7 +37,6 @@
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     if ([keyPath isEqualToString:@"title"]) {
-        NSLog(@"%@", change[NSKeyValueChangeNewKey]);
         [view updateText:change[NSKeyValueChangeNewKey]];
     }
 }

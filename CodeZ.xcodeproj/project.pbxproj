@@ -27,6 +27,9 @@
 		02DCB7C01E027B0B007AA1DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02DCB7BE1E027B0B007AA1DE /* LaunchScreen.storyboard */; };
 		02DCB7CB1E027B0B007AA1DE /* CodeZTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DCB7CA1E027B0B007AA1DE /* CodeZTests.m */; };
 		02DCB7D61E027B0B007AA1DE /* CodeZUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DCB7D51E027B0B007AA1DE /* CodeZUITests.m */; };
+		02E0078D207B423F00B9BC50 /* OneModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E0078C207B423F00B9BC50 /* OneModel.m */; };
+		02E00790207B424B00B9BC50 /* TwoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E0078F207B424B00B9BC50 /* TwoModel.m */; };
+		02E00793207B57BD00B9BC50 /* NSObject+CZKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E00792207B57BD00B9BC50 /* NSObject+CZKVO.m */; };
 		02E739431E121DE400C3F79C /* CodeZBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E739321E121DE400C3F79C /* CodeZBaseController.m */; };
 		02E739441E121DE400C3F79C /* CodeZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E739341E121DE400C3F79C /* CodeZNavigationController.m */; };
 		02E739451E121DE400C3F79C /* CodeZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E739361E121DE400C3F79C /* CodeZTabBarController.m */; };
@@ -100,6 +103,12 @@
 		02DCB7D11E027B0B007AA1DE /* CodeZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		02DCB7D51E027B0B007AA1DE /* CodeZUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeZUITests.m; sourceTree = "<group>"; };
 		02DCB7D71E027B0B007AA1DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02E0078B207B423F00B9BC50 /* OneModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneModel.h; sourceTree = "<group>"; };
+		02E0078C207B423F00B9BC50 /* OneModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneModel.m; sourceTree = "<group>"; };
+		02E0078E207B424B00B9BC50 /* TwoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoModel.h; sourceTree = "<group>"; };
+		02E0078F207B424B00B9BC50 /* TwoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoModel.m; sourceTree = "<group>"; };
+		02E00791207B57BD00B9BC50 /* NSObject+CZKVO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+CZKVO.h"; sourceTree = "<group>"; };
+		02E00792207B57BD00B9BC50 /* NSObject+CZKVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CZKVO.m"; sourceTree = "<group>"; };
 		02E739311E121DE400C3F79C /* CodeZBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeZBaseController.h; sourceTree = "<group>"; };
 		02E739321E121DE400C3F79C /* CodeZBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeZBaseController.m; sourceTree = "<group>"; };
 		02E739331E121DE400C3F79C /* CodeZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeZNavigationController.h; sourceTree = "<group>"; };
@@ -161,6 +170,8 @@
 			children = (
 				02CCEBBF1F74E6C4002C0638 /* CZNotificationManager.h */,
 				02CCEBC01F74E6C4002C0638 /* CZNotificationManager.m */,
+				02E00791207B57BD00B9BC50 /* NSObject+CZKVO.h */,
+				02E00792207B57BD00B9BC50 /* NSObject+CZKVO.m */,
 			);
 			path = "全局通知";
 			sourceTree = "<group>";
@@ -170,6 +181,10 @@
 			children = (
 				021557E6206B46EC00B2F8BC /* MVCModel.h */,
 				021557E7206B46EC00B2F8BC /* MVCModel.m */,
+				02E0078B207B423F00B9BC50 /* OneModel.h */,
+				02E0078C207B423F00B9BC50 /* OneModel.m */,
+				02E0078E207B424B00B9BC50 /* TwoModel.h */,
+				02E0078F207B424B00B9BC50 /* TwoModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -611,13 +626,16 @@
 				02E739451E121DE400C3F79C /* CodeZTabBarController.m in Sources */,
 				02D4F1461E28AB3F00B88005 /* CZDetailViewController.m in Sources */,
 				021557E8206B46EC00B2F8BC /* MVCModel.m in Sources */,
+				02E00790207B424B00B9BC50 /* TwoModel.m in Sources */,
 				02DCB7B81E027B0B007AA1DE /* ViewController.m in Sources */,
 				02F54DBB1E67C0BA00360884 /* CodeZBundleData.m in Sources */,
 				02251FE31E9B6CEA000B3910 /* WebOCViewController.m in Sources */,
+				02E00793207B57BD00B9BC50 /* NSObject+CZKVO.m in Sources */,
 				02502BDD1E66BE1100BAE946 /* HQNavTwoBarItem.m in Sources */,
 				02DCB7B51E027B0B007AA1DE /* AppDelegate.m in Sources */,
 				02CCEBC11F74E6C4002C0638 /* CZNotificationManager.m in Sources */,
 				02E9EB891E24C45E00EDF743 /* CZRotationMenu.m in Sources */,
+				02E0078D207B423F00B9BC50 /* OneModel.m in Sources */,
 				021557E5206B46E200B2F8BC /* MVCView.m in Sources */,
 				02E739441E121DE400C3F79C /* CodeZNavigationController.m in Sources */,
 				021557E2206B468A00B2F8BC /* MVCViewController.m in Sources */,
@@ -772,6 +790,7 @@
 			baseConfigurationReference = CAD76E07F04F61AFF834436D /* Pods-CodeZ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeZ/PrefixHeader.pch";
 				INFOPLIST_FILE = CodeZ/Info.plist;
@@ -786,6 +805,7 @@
 			baseConfigurationReference = E28ED8DDC848BE9D5B6D25ED /* Pods-CodeZ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeZ/PrefixHeader.pch";
 				INFOPLIST_FILE = CodeZ/Info.plist;
