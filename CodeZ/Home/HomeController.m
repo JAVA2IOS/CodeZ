@@ -11,6 +11,7 @@
 #import "CustomTableViewController.h"
 #import "CZUIAnimateViewController.h"
 #import "WebOCViewController.h"
+#import "commonProtocol.h"
 
 @interface HomeController ()<UITableViewDelegate,UITableViewDataSource> {
     NSArray * controllerNames;

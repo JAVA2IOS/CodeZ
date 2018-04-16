@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+typedef void (^handlerBlock)(int number, NSString *str);
 
 @interface MVCModel : UIView
 @property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) handlerBlock copyBlock;
+@property (nonatomic, strong) handlerBlock strongBlock;
 @end

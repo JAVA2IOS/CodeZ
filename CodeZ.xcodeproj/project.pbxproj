@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		021557E2206B468A00B2F8BC /* MVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E1206B468A00B2F8BC /* MVCViewController.m */; };
+		020EBCE5207C9BE90042DB12 /* commonProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 020EBCE4207C9BE90042DB12 /* commonProtocol.m */; };
+		021557E2206B468A00B2F8BC /* MVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E1206B468A00B2F8BC /* MVCViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		021557E5206B46E200B2F8BC /* MVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E4206B46E200B2F8BC /* MVCView.m */; };
-		021557E8206B46EC00B2F8BC /* MVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E7206B46EC00B2F8BC /* MVCModel.m */; };
+		021557E8206B46EC00B2F8BC /* MVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E7206B46EC00B2F8BC /* MVCModel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		02251FE31E9B6CEA000B3910 /* WebOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02251FE21E9B6CEA000B3910 /* WebOCViewController.m */; };
 		02502BDD1E66BE1100BAE946 /* HQNavTwoBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 02502BDC1E66BE1100BAE946 /* HQNavTwoBarItem.m */; };
 		02CCEBC11F74E6C4002C0638 /* CZNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CCEBC01F74E6C4002C0638 /* CZNotificationManager.m */; };
@@ -63,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020EBCE3207C9BE90042DB12 /* commonProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = commonProtocol.h; sourceTree = "<group>"; };
+		020EBCE4207C9BE90042DB12 /* commonProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = commonProtocol.m; sourceTree = "<group>"; };
 		021557E0206B468A00B2F8BC /* MVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCViewController.h; sourceTree = "<group>"; };
 		021557E1206B468A00B2F8BC /* MVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCViewController.m; sourceTree = "<group>"; };
 		021557E3206B46E200B2F8BC /* MVCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCView.h; sourceTree = "<group>"; };
@@ -185,6 +188,8 @@
 				02E0078C207B423F00B9BC50 /* OneModel.m */,
 				02E0078E207B424B00B9BC50 /* TwoModel.h */,
 				02E0078F207B424B00B9BC50 /* TwoModel.m */,
+				020EBCE3207C9BE90042DB12 /* commonProtocol.h */,
+				020EBCE4207C9BE90042DB12 /* commonProtocol.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -639,6 +644,7 @@
 				021557E5206B46E200B2F8BC /* MVCView.m in Sources */,
 				02E739441E121DE400C3F79C /* CodeZNavigationController.m in Sources */,
 				021557E2206B468A00B2F8BC /* MVCViewController.m in Sources */,
+				020EBCE5207C9BE90042DB12 /* commonProtocol.m in Sources */,
 				02DA964D1E237F44004AD4F9 /* CZUIAnimateViewController.m in Sources */,
 				02E739511E121EA700C3F79C /* KTOneFingerRotationGestureRecognizer.m in Sources */,
 				02DCB7B21E027B0B007AA1DE /* main.m in Sources */,
@@ -790,6 +796,7 @@
 			baseConfigurationReference = CAD76E07F04F61AFF834436D /* Pods-CodeZ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeZ/PrefixHeader.pch";
@@ -805,6 +812,7 @@
 			baseConfigurationReference = E28ED8DDC848BE9D5B6D25ED /* Pods-CodeZ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeZ/PrefixHeader.pch";

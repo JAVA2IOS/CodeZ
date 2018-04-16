@@ -8,6 +8,12 @@
 
 #import "CodeZBaseController.h"
 
+typedef void(^spaceBlock)();
+
 @interface MVCViewController : CodeZBaseController
+
+@property (nonatomic, retain) spaceBlock retainBlock;
+@property (nonatomic, strong) spaceBlock strongBlock;
+
 
 @end
