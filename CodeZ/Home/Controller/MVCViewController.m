@@ -78,13 +78,13 @@
      }
      }
      */
+    model  = [[MVCModel alloc] init];
     /*
      void (^progressBlock)(int number, NSString *str) = ^(int number, NSString *str){
      number += 1;
      str = [str stringByAppendingString:@"  number :"];
      NSLog(@"%@%d", str, number);
      };
-     model  = [[MVCModel alloc] init];
      model.copyBlock = progressBlock;
      model.strongBlock = progressBlock;
      __block int number = 4;
@@ -95,25 +95,31 @@
      model.strongBlock(number, str);
      
      NSLog(@"strong after %@", str);
-     */
-    
-    __block int j = 0;
-    
-    spaceBlock empBlock = ^{
-        j += 1;
-        NSLog(@"this is block");
-    };
-    
-    self.retainBlock = empBlock;
-    self.retainBlock();
-    NSLog(@"empBlock %@", empBlock);
-    NSLog(@"%@,%d", self.retainBlock, j);
-    self.strongBlock = empBlock;
+     
+     __block int j = 0;
+     
+     spaceBlock empBlock = ^{
+     j += 1;
+     NSLog(@"this is block");
+     };
+     
+     self.retainBlock = empBlock;
+     self.retainBlock();
+     NSLog(@"empBlock %@", empBlock);
+     NSLog(@"%@,%d", self.retainBlock, j);
+     self.strongBlock = empBlock;
      self.strongBlock();
-    NSLog(@"%@,%ld", self.strongBlock, [empBlock retainCount]);
-    empBlock = nil;
-    NSLog(@"after nil  %@,%ld", self.strongBlock, [empBlock retainCount]);
-    NSLog(@"after nil  %@,%d", self.retainBlock, j);
+     NSLog(@"%@,%ld", self.strongBlock, [empBlock retainCount]);
+     empBlock = nil;
+     NSLog(@"after nil  %@,%ld", self.strongBlock, [empBlock retainCount]);
+     NSLog(@"after nil  %@,%d", self.retainBlock, j);
+     */
+    NSMutableString *mutStr = [NSMutableString stringWithFormat:@"hello"];
+    model.strongString = mutStr;
+    model.title = mutStr;
+    [mutStr appendFormat:@" strong string"];
+    NSLog(@"strong String %@", model.strongString);
+    NSLog(@"copy String %@", model.title);
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {

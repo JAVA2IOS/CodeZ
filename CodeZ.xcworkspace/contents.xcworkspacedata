@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CodeZ/Tools/UserInfo+CoreDataClass.h">
+   </FileRef>
+   <FileRef
+      location = "group:CodeZ/Tools/UserInfo+CoreDataClass.m">
+   </FileRef>
+   <FileRef
+      location = "group:CodeZ/Tools/UserInfo+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:CodeZ/Tools/UserInfo+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
       location = "group:CodeZ.xcodeproj">
    </FileRef>
    <FileRef

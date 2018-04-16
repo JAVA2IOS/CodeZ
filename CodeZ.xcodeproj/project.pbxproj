@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		020EBCE5207C9BE90042DB12 /* commonProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 020EBCE4207C9BE90042DB12 /* commonProtocol.m */; };
-		021557E2206B468A00B2F8BC /* MVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E1206B468A00B2F8BC /* MVCViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0214692320846DCC003EBFD1 /* CodeZData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0214692120846DCC003EBFD1 /* CodeZData.xcdatamodeld */; };
+		0214693320847179003EBFD1 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0214693220847179003EBFD1 /* CoreDataViewController.m */; };
+		0214693920848E19003EBFD1 /* CodeZDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0214693820848E19003EBFD1 /* CodeZDataManager.m */; };
+		021557E2206B468A00B2F8BC /* MVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E1206B468A00B2F8BC /* MVCViewController.m */; };
 		021557E5206B46E200B2F8BC /* MVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E4206B46E200B2F8BC /* MVCView.m */; };
-		021557E8206B46EC00B2F8BC /* MVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E7206B46EC00B2F8BC /* MVCModel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		021557E8206B46EC00B2F8BC /* MVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E7206B46EC00B2F8BC /* MVCModel.m */; };
 		02251FE31E9B6CEA000B3910 /* WebOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02251FE21E9B6CEA000B3910 /* WebOCViewController.m */; };
 		02502BDD1E66BE1100BAE946 /* HQNavTwoBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 02502BDC1E66BE1100BAE946 /* HQNavTwoBarItem.m */; };
 		02CCEBC11F74E6C4002C0638 /* CZNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CCEBC01F74E6C4002C0638 /* CZNotificationManager.m */; };
@@ -66,6 +69,11 @@
 /* Begin PBXFileReference section */
 		020EBCE3207C9BE90042DB12 /* commonProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = commonProtocol.h; sourceTree = "<group>"; };
 		020EBCE4207C9BE90042DB12 /* commonProtocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = commonProtocol.m; sourceTree = "<group>"; };
+		0214692220846DCC003EBFD1 /* CodeZData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CodeZData.xcdatamodel; sourceTree = "<group>"; };
+		0214693120847179003EBFD1 /* CoreDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
+		0214693220847179003EBFD1 /* CoreDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
+		0214693720848E19003EBFD1 /* CodeZDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeZDataManager.h; sourceTree = "<group>"; };
+		0214693820848E19003EBFD1 /* CodeZDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeZDataManager.m; sourceTree = "<group>"; };
 		021557E0206B468A00B2F8BC /* MVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCViewController.h; sourceTree = "<group>"; };
 		021557E1206B468A00B2F8BC /* MVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCViewController.m; sourceTree = "<group>"; };
 		021557E3206B46E200B2F8BC /* MVCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCView.h; sourceTree = "<group>"; };
@@ -168,6 +176,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0214692020846D86003EBFD1 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				0214692120846DCC003EBFD1 /* CodeZData.xcdatamodeld */,
+				0214693720848E19003EBFD1 /* CodeZDataManager.h */,
+				0214693820848E19003EBFD1 /* CodeZDataManager.m */,
+			);
+			name = data;
+			sourceTree = "<group>";
+		};
 		02CCEBBE1F74E6AB002C0638 /* 全局通知 */ = {
 			isa = PBXGroup;
 			children = (
@@ -328,6 +346,8 @@
 				02251FE21E9B6CEA000B3910 /* WebOCViewController.m */,
 				021557E0206B468A00B2F8BC /* MVCViewController.h */,
 				021557E1206B468A00B2F8BC /* MVCViewController.m */,
+				0214693120847179003EBFD1 /* CoreDataViewController.h */,
+				0214693220847179003EBFD1 /* CoreDataViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -352,6 +372,7 @@
 		02E7393F1E121DE400C3F79C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0214692020846D86003EBFD1 /* data */,
 				02CCEBBE1F74E6AB002C0638 /* 全局通知 */,
 				02EE04951E9F222800EC5EAC /* 手势管理 */,
 				02F54DB81E67C09800360884 /* 自定义绑定数据与显示值 */,
@@ -504,6 +525,7 @@
 				TargetAttributes = {
 					02DCB7AC1E027B0B007AA1DE = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					02DCB7C51E027B0B007AA1DE = {
@@ -637,7 +659,9 @@
 				02251FE31E9B6CEA000B3910 /* WebOCViewController.m in Sources */,
 				02E00793207B57BD00B9BC50 /* NSObject+CZKVO.m in Sources */,
 				02502BDD1E66BE1100BAE946 /* HQNavTwoBarItem.m in Sources */,
+				0214693920848E19003EBFD1 /* CodeZDataManager.m in Sources */,
 				02DCB7B51E027B0B007AA1DE /* AppDelegate.m in Sources */,
+				0214693320847179003EBFD1 /* CoreDataViewController.m in Sources */,
 				02CCEBC11F74E6C4002C0638 /* CZNotificationManager.m in Sources */,
 				02E9EB891E24C45E00EDF743 /* CZRotationMenu.m in Sources */,
 				02E0078D207B423F00B9BC50 /* OneModel.m in Sources */,
@@ -647,6 +671,7 @@
 				020EBCE5207C9BE90042DB12 /* commonProtocol.m in Sources */,
 				02DA964D1E237F44004AD4F9 /* CZUIAnimateViewController.m in Sources */,
 				02E739511E121EA700C3F79C /* KTOneFingerRotationGestureRecognizer.m in Sources */,
+				0214692320846DCC003EBFD1 /* CodeZData.xcdatamodeld in Sources */,
 				02DCB7B21E027B0B007AA1DE /* main.m in Sources */,
 				02FA05A51E667ECE005C2B83 /* HQNavigationBarItem.m in Sources */,
 			);
@@ -796,6 +821,7 @@
 			baseConfigurationReference = CAD76E07F04F61AFF834436D /* Pods-CodeZ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -804,6 +830,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HQExample.CodeZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeZ/Tools/CodeZ-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -812,6 +841,7 @@
 			baseConfigurationReference = E28ED8DDC848BE9D5B6D25ED /* Pods-CodeZ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -820,6 +850,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HQExample.CodeZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CodeZ/Tools/CodeZ-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -909,6 +941,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0214692120846DCC003EBFD1 /* CodeZData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0214692220846DCC003EBFD1 /* CodeZData.xcdatamodel */,
+			);
+			currentVersion = 0214692220846DCC003EBFD1 /* CodeZData.xcdatamodel */;
+			path = CodeZData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 02DCB7A51E027B0B007AA1DE /* Project object */;
 }
