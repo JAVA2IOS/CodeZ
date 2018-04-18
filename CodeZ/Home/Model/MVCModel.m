@@ -18,4 +18,24 @@
 }
 */
 
+- (instancetype)init {
+    self = [super init];
+    return self;
+}
+
+/*
+ - (void)addKVO {
+ [self addObserver:self forKeyPath:@"title" options:NSKeyValueObservingOptionNew context:nil];
+ }
+ 
+ - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+ 
+ }
+ 
+ - (void)dealloc {
+ [self removeObserver:self forKeyPath:@"title"];
+ }
+ */
+
+
 @end

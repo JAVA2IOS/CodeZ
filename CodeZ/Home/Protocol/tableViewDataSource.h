@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MVVMTableCell.h"
+#import "MVVMListTableCellModel.h"
 
 @interface tableViewDataSource : NSObject<UITableViewDelegate, UITableViewDataSource>
-@property (nonatomic, retain) MVVMTableCell *tableVM;
+@property (nonatomic, retain) MVVMListTableCellModel *listVM;
 @end

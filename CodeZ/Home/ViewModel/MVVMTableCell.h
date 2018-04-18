@@ -7,7 +7,10 @@
 //
 
 #import "ViewModel.h"
+#import "MVCModel.h"
 
 @interface MVVMTableCell : ViewModel
-- (void)getModelData:(void(^)(id data))succcess;
+@property (nonatomic, readonly, retain) MVCModel *model;
+@property (nonatomic, copy) NSString *title;
+- (instancetype)initWith:(MVCModel *)model;
 @end

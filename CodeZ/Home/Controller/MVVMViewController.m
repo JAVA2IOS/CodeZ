@@ -10,9 +10,10 @@
 #import "MVCModel.h"
 #import "tableViewDataSource.h"
 #import "MVVMTableCell.h"
+#import "MVVMListTableCellModel.h"
 
 @interface MVVMViewController () {
-    tableViewDataSource *source;
+    __block tableViewDataSource *source;
 }
 
 @end
@@ -21,13 +22,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    MVVMTableCell *tabVM = [[MVVMTableCell alloc] init];
-    // 获取数据
-    [tabVM getModelData:^(id data) {
-        
-    }];
-    
+    MVVMListTableCellModel *listVm = [[MVVMListTableCellModel alloc] init];
     source = [[tableViewDataSource alloc] init];
+    [listVm getJsonData:^(id json) {
+        source.listVM = json;
+    }];
     UITableView *mainTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, SELFVIEWWIDTH, SELFVIEWHEIGHT - 64)];
     mainTableView.delegate = source;
     mainTableView.dataSource = source;

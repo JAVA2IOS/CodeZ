@@ -11,21 +11,27 @@
 /*
  ViewModel处理model的数据获取，将数据以block返回
  */
+@interface MVVMTableCell()
+@property (nonatomic, readwrite, retain) MVCModel *model;
+@end
 
 @implementation MVVMTableCell
 
-- (void)getModelData:(void (^)(id))succcess {
-    NSMutableArray *dataArray = [[NSMutableArray alloc] init];
-    for (int i = 0; i < 10; i ++) {
-        @autoreleasepool {
-            MVCModel *model = [[MVCModel alloc] init];
-            model.title = [NSString stringWithFormat:@"model title : %d", i];
-            [dataArray addObject:model];
-        }
+- (instancetype)initWith:(MVCModel *)model {
+    self = [super init];
+    if (self) {
+        _model = model;
+        self.title = _model.title;
     }
-    
-    if (succcess) {
-        succcess(dataArray);
-    }
+    return self;
 }
+
+- (MVCModel *)model:(MVCModel *)model {
+    if (!_model) {
+        _model = [[MVCModel alloc] init];
+        _model = model;
+    }
+    return _model;
+}
+
 @end

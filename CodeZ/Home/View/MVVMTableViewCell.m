@@ -26,10 +26,5 @@
     return self;
 }
 
-- (void)setTitle:(NSString *)title {
-    _title = title;
-    self.textLabel.text = title;
-}
-
 
 @end

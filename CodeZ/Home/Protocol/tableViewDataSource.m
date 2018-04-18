@@ -8,11 +8,12 @@
 
 #import "tableViewDataSource.h"
 #import "MVVMTableViewCell.h"
+#import "MVVMTableCell.h"
 
 @implementation tableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return self.listVM.dataArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -21,8 +22,9 @@
     if (cell == nil) {
         cell = [[MVVMTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
+    MVVMTableCell *tabVM = _listVM.dataArray[indexPath.row];
+    cell.textLabel.text = tabVM.title;
     
-    cell.title = self.tableVM;
     return cell;
 }
 

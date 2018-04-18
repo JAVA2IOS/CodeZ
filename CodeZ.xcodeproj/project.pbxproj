@@ -19,6 +19,7 @@
 		0224B97D2086EB6900AEC292 /* tableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B97C2086EB6900AEC292 /* tableViewDataSource.m */; };
 		0224B9802086EEA800AEC292 /* MVVMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B97F2086EEA800AEC292 /* MVVMTableViewCell.m */; };
 		0224B9832086F1BE00AEC292 /* MVVMTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B9822086F1BE00AEC292 /* MVVMTableCell.m */; };
+		0224B98620871F4B00AEC292 /* MVVMListTableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B98520871F4B00AEC292 /* MVVMListTableCellModel.m */; };
 		02251FE31E9B6CEA000B3910 /* WebOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02251FE21E9B6CEA000B3910 /* WebOCViewController.m */; };
 		02502BDD1E66BE1100BAE946 /* HQNavTwoBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 02502BDC1E66BE1100BAE946 /* HQNavTwoBarItem.m */; };
 		02CCEBC11F74E6C4002C0638 /* CZNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CCEBC01F74E6C4002C0638 /* CZNotificationManager.m */; };
@@ -95,6 +96,8 @@
 		0224B97F2086EEA800AEC292 /* MVVMTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTableViewCell.m; sourceTree = "<group>"; };
 		0224B9812086F1BE00AEC292 /* MVVMTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMTableCell.h; sourceTree = "<group>"; };
 		0224B9822086F1BE00AEC292 /* MVVMTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTableCell.m; sourceTree = "<group>"; };
+		0224B98420871F4B00AEC292 /* MVVMListTableCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMListTableCellModel.h; sourceTree = "<group>"; };
+		0224B98520871F4B00AEC292 /* MVVMListTableCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMListTableCellModel.m; sourceTree = "<group>"; };
 		02251FE11E9B6CEA000B3910 /* WebOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOCViewController.h; sourceTree = "<group>"; };
 		02251FE21E9B6CEA000B3910 /* WebOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOCViewController.m; sourceTree = "<group>"; };
 		02502BDB1E66BE1100BAE946 /* HQNavTwoBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQNavTwoBarItem.h; sourceTree = "<group>"; };
@@ -208,6 +211,8 @@
 				0224B9782086D9F800AEC292 /* ViewModel.m */,
 				0224B9812086F1BE00AEC292 /* MVVMTableCell.h */,
 				0224B9822086F1BE00AEC292 /* MVVMTableCell.m */,
+				0224B98420871F4B00AEC292 /* MVVMListTableCellModel.h */,
+				0224B98520871F4B00AEC292 /* MVVMListTableCellModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -703,6 +708,7 @@
 				02F54DBB1E67C0BA00360884 /* CodeZBundleData.m in Sources */,
 				02251FE31E9B6CEA000B3910 /* WebOCViewController.m in Sources */,
 				02E00793207B57BD00B9BC50 /* NSObject+CZKVO.m in Sources */,
+				0224B98620871F4B00AEC292 /* MVVMListTableCellModel.m in Sources */,
 				02502BDD1E66BE1100BAE946 /* HQNavTwoBarItem.m in Sources */,
 				0214693920848E19003EBFD1 /* CodeZDataManager.m in Sources */,
 				02DCB7B51E027B0B007AA1DE /* AppDelegate.m in Sources */,

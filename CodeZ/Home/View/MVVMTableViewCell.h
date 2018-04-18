@@ -9,5 +9,4 @@
 #import <UIKit/UIKit.h>
 
 @interface MVVMTableViewCell : UITableViewCell
-@property (nonatomic, copy) NSString *title;
 @end
