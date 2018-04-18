@@ -24,8 +24,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    controllerNames = @[@"RotateViewController",@"CustomTableViewController",@"CZUIAnimateViewController",@"WebOCViewController",@"MVCViewController", @"CoreDataViewController"];
-    controllerTitles = @[@"旋转视图",@"自定义tableView",@"UI动画特效",@"原生UIWebView加载h5", @"mvc模式测试", @"coreData"];
+    controllerNames = @[@"RotateViewController",@"CustomTableViewController",@"CZUIAnimateViewController",@"WebOCViewController",@"MVCViewController", @"CoreDataViewController", @"MVVMViewController"];
+    controllerTitles = @[@"旋转视图",@"自定义tableView",@"UI动画特效",@"原生UIWebView加载h5", @"mvc模式测试", @"coreData", @"MVVM架构"];
     UITableView * table = [[UITableView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:table];
     table.delegate = self;

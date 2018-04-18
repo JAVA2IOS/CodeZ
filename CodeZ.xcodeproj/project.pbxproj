@@ -14,6 +14,11 @@
 		021557E2206B468A00B2F8BC /* MVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E1206B468A00B2F8BC /* MVCViewController.m */; };
 		021557E5206B46E200B2F8BC /* MVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E4206B46E200B2F8BC /* MVCView.m */; };
 		021557E8206B46EC00B2F8BC /* MVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E7206B46EC00B2F8BC /* MVCModel.m */; };
+		0224B9752086D23E00AEC292 /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B9742086D23E00AEC292 /* MVVMViewController.m */; };
+		0224B9792086D9F800AEC292 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B9782086D9F800AEC292 /* ViewModel.m */; };
+		0224B97D2086EB6900AEC292 /* tableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B97C2086EB6900AEC292 /* tableViewDataSource.m */; };
+		0224B9802086EEA800AEC292 /* MVVMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B97F2086EEA800AEC292 /* MVVMTableViewCell.m */; };
+		0224B9832086F1BE00AEC292 /* MVVMTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B9822086F1BE00AEC292 /* MVVMTableCell.m */; };
 		02251FE31E9B6CEA000B3910 /* WebOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02251FE21E9B6CEA000B3910 /* WebOCViewController.m */; };
 		02502BDD1E66BE1100BAE946 /* HQNavTwoBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 02502BDC1E66BE1100BAE946 /* HQNavTwoBarItem.m */; };
 		02CCEBC11F74E6C4002C0638 /* CZNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CCEBC01F74E6C4002C0638 /* CZNotificationManager.m */; };
@@ -80,6 +85,16 @@
 		021557E4206B46E200B2F8BC /* MVCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCView.m; sourceTree = "<group>"; };
 		021557E6206B46EC00B2F8BC /* MVCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCModel.h; sourceTree = "<group>"; };
 		021557E7206B46EC00B2F8BC /* MVCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCModel.m; sourceTree = "<group>"; };
+		0224B9732086D23D00AEC292 /* MVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
+		0224B9742086D23E00AEC292 /* MVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
+		0224B9772086D9F800AEC292 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		0224B9782086D9F800AEC292 /* ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		0224B97B2086EB6900AEC292 /* tableViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tableViewDataSource.h; sourceTree = "<group>"; };
+		0224B97C2086EB6900AEC292 /* tableViewDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableViewDataSource.m; sourceTree = "<group>"; };
+		0224B97E2086EEA800AEC292 /* MVVMTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMTableViewCell.h; sourceTree = "<group>"; };
+		0224B97F2086EEA800AEC292 /* MVVMTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTableViewCell.m; sourceTree = "<group>"; };
+		0224B9812086F1BE00AEC292 /* MVVMTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMTableCell.h; sourceTree = "<group>"; };
+		0224B9822086F1BE00AEC292 /* MVVMTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMTableCell.m; sourceTree = "<group>"; };
 		02251FE11E9B6CEA000B3910 /* WebOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOCViewController.h; sourceTree = "<group>"; };
 		02251FE21E9B6CEA000B3910 /* WebOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOCViewController.m; sourceTree = "<group>"; };
 		02502BDB1E66BE1100BAE946 /* HQNavTwoBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQNavTwoBarItem.h; sourceTree = "<group>"; };
@@ -186,6 +201,26 @@
 			name = data;
 			sourceTree = "<group>";
 		};
+		0224B9762086D9E000AEC292 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0224B9772086D9F800AEC292 /* ViewModel.h */,
+				0224B9782086D9F800AEC292 /* ViewModel.m */,
+				0224B9812086F1BE00AEC292 /* MVVMTableCell.h */,
+				0224B9822086F1BE00AEC292 /* MVVMTableCell.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0224B97A2086EB4D00AEC292 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0224B97B2086EB6900AEC292 /* tableViewDataSource.h */,
+				0224B97C2086EB6900AEC292 /* tableViewDataSource.m */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
 		02CCEBBE1F74E6AB002C0638 /* 全局通知 */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +258,8 @@
 				02DA964F1E238030004AD4F9 /* CZRotateView.m */,
 				021557E3206B46E200B2F8BC /* MVCView.h */,
 				021557E4206B46E200B2F8BC /* MVCView.m */,
+				0224B97E2086EEA800AEC292 /* MVVMTableViewCell.h */,
+				0224B97F2086EEA800AEC292 /* MVVMTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +359,8 @@
 		02E739371E121DE400C3F79C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0224B97A2086EB4D00AEC292 /* Protocol */,
+				0224B9762086D9E000AEC292 /* ViewModel */,
 				02CF409B1E1B978300FAD7A3 /* Model */,
 				02CF409C1E1B978300FAD7A3 /* View */,
 				02E739381E121DE400C3F79C /* Controller */,
@@ -348,6 +387,8 @@
 				021557E1206B468A00B2F8BC /* MVCViewController.m */,
 				0214693120847179003EBFD1 /* CoreDataViewController.h */,
 				0214693220847179003EBFD1 /* CoreDataViewController.m */,
+				0224B9732086D23D00AEC292 /* MVVMViewController.h */,
+				0224B9742086D23E00AEC292 /* MVVMViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -645,6 +686,9 @@
 				02E7394B1E121E5900C3F79C /* HomeController.m in Sources */,
 				02DA96501E238030004AD4F9 /* CZRotateView.m in Sources */,
 				02FA05A81E667EE6005C2B83 /* HQNavigationBar.m in Sources */,
+				0224B9752086D23E00AEC292 /* MVVMViewController.m in Sources */,
+				0224B9792086D9F800AEC292 /* ViewModel.m in Sources */,
+				0224B9832086F1BE00AEC292 /* MVVMTableCell.m in Sources */,
 				02E739471E121DE400C3F79C /* SettingController.m in Sources */,
 				02E739431E121DE400C3F79C /* CodeZBaseController.m in Sources */,
 				02D4F1431E28A75000B88005 /* CodeZTransitionAnimation.m in Sources */,
@@ -653,6 +697,7 @@
 				02E739451E121DE400C3F79C /* CodeZTabBarController.m in Sources */,
 				02D4F1461E28AB3F00B88005 /* CZDetailViewController.m in Sources */,
 				021557E8206B46EC00B2F8BC /* MVCModel.m in Sources */,
+				0224B9802086EEA800AEC292 /* MVVMTableViewCell.m in Sources */,
 				02E00790207B424B00B9BC50 /* TwoModel.m in Sources */,
 				02DCB7B81E027B0B007AA1DE /* ViewController.m in Sources */,
 				02F54DBB1E67C0BA00360884 /* CodeZBundleData.m in Sources */,
@@ -666,6 +711,7 @@
 				02E9EB891E24C45E00EDF743 /* CZRotationMenu.m in Sources */,
 				02E0078D207B423F00B9BC50 /* OneModel.m in Sources */,
 				021557E5206B46E200B2F8BC /* MVCView.m in Sources */,
+				0224B97D2086EB6900AEC292 /* tableViewDataSource.m in Sources */,
 				02E739441E121DE400C3F79C /* CodeZNavigationController.m in Sources */,
 				021557E2206B468A00B2F8BC /* MVCViewController.m in Sources */,
 				020EBCE5207C9BE90042DB12 /* commonProtocol.m in Sources */,
