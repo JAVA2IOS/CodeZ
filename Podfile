@@ -6,4 +6,6 @@ target ‘CodeZ’ do
 pod ‘AFNetworking’
 pod ‘Masonry’
 pod ‘MJRefresh’
+pod 'FMDB'
 end
+

@@ -34,6 +34,14 @@
     mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [self.view addSubview:mainTableView];
+    
+//    UIImage *image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"" ofType:@"png"]];
+    
+    // 获取plist文件
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Info" ofType:@"plist"];
+    NSDictionary *dataDic = [[NSDictionary alloc] initWithContentsOfFile:plistPath];
+    NSLog(@"path %@, %@", plistPath, dataDic);
+    NSString *plistPath1 = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingString:@"Info.plist"];
 }
 
 - (void)didReceiveMemoryWarning {
