@@ -7,5 +7,6 @@ pod ‘AFNetworking’
 pod ‘Masonry’
 pod ‘MJRefresh’
 pod 'FMDB'
+pod 'CocoaAsyncSocket'
 end
 

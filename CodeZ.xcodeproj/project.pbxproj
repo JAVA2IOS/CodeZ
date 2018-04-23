@@ -14,6 +14,8 @@
 		021557E2206B468A00B2F8BC /* MVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E1206B468A00B2F8BC /* MVCViewController.m */; };
 		021557E5206B46E200B2F8BC /* MVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E4206B46E200B2F8BC /* MVCView.m */; };
 		021557E8206B46EC00B2F8BC /* MVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E7206B46EC00B2F8BC /* MVCModel.m */; };
+		0219714A208D6B7C00EF52FB /* ScoketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02197149208D6B7C00EF52FB /* ScoketViewController.m */; };
+		0219714D208D8E7F00EF52FB /* ServerScoket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0219714C208D8E7F00EF52FB /* ServerScoket.m */; };
 		0224B9752086D23E00AEC292 /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B9742086D23E00AEC292 /* MVVMViewController.m */; };
 		0224B9792086D9F800AEC292 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B9782086D9F800AEC292 /* ViewModel.m */; };
 		0224B97D2086EB6900AEC292 /* tableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B97C2086EB6900AEC292 /* tableViewDataSource.m */; };
@@ -86,6 +88,10 @@
 		021557E4206B46E200B2F8BC /* MVCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCView.m; sourceTree = "<group>"; };
 		021557E6206B46EC00B2F8BC /* MVCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCModel.h; sourceTree = "<group>"; };
 		021557E7206B46EC00B2F8BC /* MVCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCModel.m; sourceTree = "<group>"; };
+		02197148208D6B7C00EF52FB /* ScoketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoketViewController.h; sourceTree = "<group>"; };
+		02197149208D6B7C00EF52FB /* ScoketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoketViewController.m; sourceTree = "<group>"; };
+		0219714B208D8E7F00EF52FB /* ServerScoket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerScoket.h; sourceTree = "<group>"; };
+		0219714C208D8E7F00EF52FB /* ServerScoket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerScoket.m; sourceTree = "<group>"; };
 		0224B9732086D23D00AEC292 /* MVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
 		0224B9742086D23E00AEC292 /* MVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
 		0224B9772086D9F800AEC292 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
@@ -248,6 +254,8 @@
 				02E0078F207B424B00B9BC50 /* TwoModel.m */,
 				020EBCE3207C9BE90042DB12 /* commonProtocol.h */,
 				020EBCE4207C9BE90042DB12 /* commonProtocol.m */,
+				0219714B208D8E7F00EF52FB /* ServerScoket.h */,
+				0219714C208D8E7F00EF52FB /* ServerScoket.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -394,6 +402,8 @@
 				0214693220847179003EBFD1 /* CoreDataViewController.m */,
 				0224B9732086D23D00AEC292 /* MVVMViewController.h */,
 				0224B9742086D23E00AEC292 /* MVVMViewController.m */,
+				02197148208D6B7C00EF52FB /* ScoketViewController.h */,
+				02197149208D6B7C00EF52FB /* ScoketViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -696,6 +706,7 @@
 				0224B9832086F1BE00AEC292 /* MVVMTableCell.m in Sources */,
 				02E739471E121DE400C3F79C /* SettingController.m in Sources */,
 				02E739431E121DE400C3F79C /* CodeZBaseController.m in Sources */,
+				0219714A208D6B7C00EF52FB /* ScoketViewController.m in Sources */,
 				02D4F1431E28A75000B88005 /* CodeZTransitionAnimation.m in Sources */,
 				02CF409F1E1B980200FAD7A3 /* DynamicHeightTableViewCell.m in Sources */,
 				02E7394E1E121E6100C3F79C /* RotateViewController.m in Sources */,
@@ -724,6 +735,7 @@
 				02DA964D1E237F44004AD4F9 /* CZUIAnimateViewController.m in Sources */,
 				02E739511E121EA700C3F79C /* KTOneFingerRotationGestureRecognizer.m in Sources */,
 				0214692320846DCC003EBFD1 /* CodeZData.xcdatamodeld in Sources */,
+				0219714D208D8E7F00EF52FB /* ServerScoket.m in Sources */,
 				02DCB7B21E027B0B007AA1DE /* main.m in Sources */,
 				02FA05A51E667ECE005C2B83 /* HQNavigationBarItem.m in Sources */,
 			);

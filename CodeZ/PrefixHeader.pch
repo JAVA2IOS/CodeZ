@@ -13,6 +13,7 @@
 #import "AFNetworking.h"
 #import "MJRefresh.h"
 #import "FMDB.h"
+#import "GCDAsyncSocket.h"
 
 #define SELFVIEWWIDTH self.view.frame.size.width
 #define SELFVIEWHEIGHT self.view.frame.size.height

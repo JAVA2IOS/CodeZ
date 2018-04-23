@@ -34,7 +34,7 @@
     mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [self.view addSubview:mainTableView];
-    
+
 //    UIImage *image = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"" ofType:@"png"]];
     
     // 获取plist文件
