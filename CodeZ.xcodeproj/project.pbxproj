@@ -14,6 +14,8 @@
 		021557E2206B468A00B2F8BC /* MVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E1206B468A00B2F8BC /* MVCViewController.m */; };
 		021557E5206B46E200B2F8BC /* MVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E4206B46E200B2F8BC /* MVCView.m */; };
 		021557E8206B46EC00B2F8BC /* MVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 021557E7206B46EC00B2F8BC /* MVCModel.m */; };
+		0218BA6C208EC89100FBC341 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0218BA6B208EC89000FBC341 /* MapViewController.m */; };
+		0218BA6E208EC98600FBC341 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0218BA6D208EC98600FBC341 /* MapKit.framework */; };
 		0219714A208D6B7C00EF52FB /* ScoketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02197149208D6B7C00EF52FB /* ScoketViewController.m */; };
 		0219714D208D8E7F00EF52FB /* ServerScoket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0219714C208D8E7F00EF52FB /* ServerScoket.m */; };
 		0224B9752086D23E00AEC292 /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B9742086D23E00AEC292 /* MVVMViewController.m */; };
@@ -88,6 +90,9 @@
 		021557E4206B46E200B2F8BC /* MVCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCView.m; sourceTree = "<group>"; };
 		021557E6206B46EC00B2F8BC /* MVCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCModel.h; sourceTree = "<group>"; };
 		021557E7206B46EC00B2F8BC /* MVCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCModel.m; sourceTree = "<group>"; };
+		0218BA6A208EC89000FBC341 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		0218BA6B208EC89000FBC341 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		0218BA6D208EC98600FBC341 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		02197148208D6B7C00EF52FB /* ScoketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoketViewController.h; sourceTree = "<group>"; };
 		02197149208D6B7C00EF52FB /* ScoketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoketViewController.m; sourceTree = "<group>"; };
 		0219714B208D8E7F00EF52FB /* ServerScoket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerScoket.h; sourceTree = "<group>"; };
@@ -179,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0218BA6E208EC98600FBC341 /* MapKit.framework in Frameworks */,
 				BF147D3721128658AB95D204 /* Pods_CodeZ.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +410,8 @@
 				0224B9742086D23E00AEC292 /* MVVMViewController.m */,
 				02197148208D6B7C00EF52FB /* ScoketViewController.h */,
 				02197149208D6B7C00EF52FB /* ScoketViewController.m */,
+				0218BA6A208EC89000FBC341 /* MapViewController.h */,
+				0218BA6B208EC89000FBC341 /* MapViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -506,6 +514,7 @@
 		DEE026212089C597C38C0361 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0218BA6D208EC98600FBC341 /* MapKit.framework */,
 				3E990662C875E018C5291421 /* Pods_CodeZ.framework */,
 			);
 			name = Frameworks;
@@ -583,6 +592,11 @@
 						CreatedOnToolsVersion = 8.1;
 						LastSwiftMigration = "";
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					02DCB7C51E027B0B007AA1DE = {
 						CreatedOnToolsVersion = 8.1;
@@ -732,6 +746,7 @@
 				02E739441E121DE400C3F79C /* CodeZNavigationController.m in Sources */,
 				021557E2206B468A00B2F8BC /* MVCViewController.m in Sources */,
 				020EBCE5207C9BE90042DB12 /* commonProtocol.m in Sources */,
+				0218BA6C208EC89100FBC341 /* MapViewController.m in Sources */,
 				02DA964D1E237F44004AD4F9 /* CZUIAnimateViewController.m in Sources */,
 				02E739511E121EA700C3F79C /* KTOneFingerRotationGestureRecognizer.m in Sources */,
 				0214692320846DCC003EBFD1 /* CodeZData.xcdatamodeld in Sources */,
