@@ -45,6 +45,7 @@ typedef NS_ENUM(NSInteger, SlidingDirection){
 }
 
 - (void)drawRect:(CGRect)rect {
+//    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
     [self.subviews enumerateObjectsUsingBlock:^(__kindof UIView * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [obj removeFromSuperview];
     }];

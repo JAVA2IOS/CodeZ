@@ -7,8 +7,9 @@
 //
 
 #import "WebOCViewController.h"
+#import <WebKit/WebKit.h>
 
-@interface WebOCViewController () <UIWebViewDelegate>
+@interface WebOCViewController () <WKUIDelegate, WKNavigationDelegate>
 
 @end
 
@@ -22,18 +23,48 @@
 }
 
 - (void)wo_getWebJs {
-    UIWebView *web = [[UIWebView alloc] initWithFrame:self.view.bounds];
+    WKWebView *web = [[WKWebView alloc] initWithFrame:self.view.bounds];
     NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
     NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url];
     [web loadRequest:urlRequest];
     [self.view addSubview:web];
-    web.delegate = self;
+    web.UIDelegate = self;
+    web.navigationDelegate = self;
+}
+
+#pragma mark - WKNavigationDelegate
+- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation {
+    // 页面开始加载时调用
+}
+
+- (void)webView:(WKWebView *)webView didCommitNavigation:(WKNavigation *)navigation {
+    // 当内容开始返回时调用
+}
+
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation {
+    // 页面加载完成之后调用
+}
+
+- (void)webView:(WKWebView *)webView didReceiveServerRedirectForProvisionalNavigation:(WKNavigation *)navigation {
+    // 接收到服务器跳转请求之后调用
+}
+
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+    // 接收到响应，决定是否跳转
+    NSLog(@"链接地址:%@",navigationAction.request.URL.absoluteString);
+    // 允许跳转
+    decisionHandler(WKNavigationActionPolicyAllow);
+    // 不予许跳转
+//    decisionHandler(WKNavigationActionPolicyCancel);
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+#pragma mark - WebViewDelegate
 
 - (void)webViewDidStartLoad:(UIWebView *)webView {
     /*

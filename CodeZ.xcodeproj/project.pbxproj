@@ -18,6 +18,7 @@
 		0218BA6E208EC98600FBC341 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0218BA6D208EC98600FBC341 /* MapKit.framework */; };
 		0219714A208D6B7C00EF52FB /* ScoketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02197149208D6B7C00EF52FB /* ScoketViewController.m */; };
 		0219714D208D8E7F00EF52FB /* ServerScoket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0219714C208D8E7F00EF52FB /* ServerScoket.m */; };
+		021EC984209169A6002AAD4E /* CodeZAPNsConfigureCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 021EC983209169A6002AAD4E /* CodeZAPNsConfigureCenter.m */; };
 		0224B9752086D23E00AEC292 /* MVVMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B9742086D23E00AEC292 /* MVVMViewController.m */; };
 		0224B9792086D9F800AEC292 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B9782086D9F800AEC292 /* ViewModel.m */; };
 		0224B97D2086EB6900AEC292 /* tableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B97C2086EB6900AEC292 /* tableViewDataSource.m */; };
@@ -97,6 +98,9 @@
 		02197149208D6B7C00EF52FB /* ScoketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoketViewController.m; sourceTree = "<group>"; };
 		0219714B208D8E7F00EF52FB /* ServerScoket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerScoket.h; sourceTree = "<group>"; };
 		0219714C208D8E7F00EF52FB /* ServerScoket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerScoket.m; sourceTree = "<group>"; };
+		021EC98020916438002AAD4E /* CodeZ.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodeZ.entitlements; sourceTree = "<group>"; };
+		021EC982209169A6002AAD4E /* CodeZAPNsConfigureCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeZAPNsConfigureCenter.h; sourceTree = "<group>"; };
+		021EC983209169A6002AAD4E /* CodeZAPNsConfigureCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeZAPNsConfigureCenter.m; sourceTree = "<group>"; };
 		0224B9732086D23D00AEC292 /* MVVMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMViewController.h; sourceTree = "<group>"; };
 		0224B9742086D23E00AEC292 /* MVVMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMViewController.m; sourceTree = "<group>"; };
 		0224B9772086D9F800AEC292 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
@@ -216,6 +220,15 @@
 			name = data;
 			sourceTree = "<group>";
 		};
+		021EC9812091697D002AAD4E /* 推送配置文件 */ = {
+			isa = PBXGroup;
+			children = (
+				021EC982209169A6002AAD4E /* CodeZAPNsConfigureCenter.h */,
+				021EC983209169A6002AAD4E /* CodeZAPNsConfigureCenter.m */,
+			);
+			path = "推送配置文件";
+			sourceTree = "<group>";
+		};
 		0224B9762086D9E000AEC292 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -308,6 +321,7 @@
 		02DCB7AF1E027B0B007AA1DE /* CodeZ */ = {
 			isa = PBXGroup;
 			children = (
+				021EC98020916438002AAD4E /* CodeZ.entitlements */,
 				02E7392F1E121DE400C3F79C /* Base */,
 				02E739371E121DE400C3F79C /* Home */,
 				02E7393B1E121DE400C3F79C /* Setting */,
@@ -436,6 +450,7 @@
 		02E7393F1E121DE400C3F79C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				021EC9812091697D002AAD4E /* 推送配置文件 */,
 				0214692020846D86003EBFD1 /* data */,
 				02CCEBBE1F74E6AB002C0638 /* 全局通知 */,
 				02EE04951E9F222800EC5EAC /* 手势管理 */,
@@ -590,10 +605,17 @@
 				TargetAttributes = {
 					02DCB7AC1E027B0B007AA1DE = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = F7WPCZ2UFH;
 						LastSwiftMigration = "";
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -729,6 +751,7 @@
 				021557E8206B46EC00B2F8BC /* MVCModel.m in Sources */,
 				0224B9802086EEA800AEC292 /* MVVMTableViewCell.m in Sources */,
 				02E00790207B424B00B9BC50 /* TwoModel.m in Sources */,
+				021EC984209169A6002AAD4E /* CodeZAPNsConfigureCenter.m in Sources */,
 				02DCB7B81E027B0B007AA1DE /* ViewController.m in Sources */,
 				02F54DBB1E67C0BA00360884 /* CodeZBundleData.m in Sources */,
 				02251FE31E9B6CEA000B3910 /* WebOCViewController.m in Sources */,
@@ -902,6 +925,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = CodeZ/CodeZ.entitlements;
+				DEVELOPMENT_TEAM = F7WPCZ2UFH;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeZ/PrefixHeader.pch";
@@ -923,6 +948,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_ENTITLEMENTS = CodeZ/CodeZ.entitlements;
+				DEVELOPMENT_TEAM = F7WPCZ2UFH;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeZ/PrefixHeader.pch";
