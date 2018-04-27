@@ -26,7 +26,9 @@
 		0224B9832086F1BE00AEC292 /* MVVMTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B9822086F1BE00AEC292 /* MVVMTableCell.m */; };
 		0224B98620871F4B00AEC292 /* MVVMListTableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B98520871F4B00AEC292 /* MVVMListTableCellModel.m */; };
 		02251FE31E9B6CEA000B3910 /* WebOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02251FE21E9B6CEA000B3910 /* WebOCViewController.m */; };
+		024C37C32092C637008B4813 /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 024C37C22092C637008B4813 /* RuntimeViewController.m */; };
 		02502BDD1E66BE1100BAE946 /* HQNavTwoBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 02502BDC1E66BE1100BAE946 /* HQNavTwoBarItem.m */; };
+		02B5074B2092EBDC00DECD5A /* UIButton+ResponderBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B5074A2092EBDC00DECD5A /* UIButton+ResponderBlock.m */; };
 		02CCEBC11F74E6C4002C0638 /* CZNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CCEBC01F74E6C4002C0638 /* CZNotificationManager.m */; };
 		02CF409A1E1B944400FAD7A3 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CF40991E1B944400FAD7A3 /* CustomTableViewController.m */; };
 		02CF409F1E1B980200FAD7A3 /* DynamicHeightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CF409E1E1B980200FAD7A3 /* DynamicHeightTableViewCell.m */; };
@@ -115,8 +117,12 @@
 		0224B98520871F4B00AEC292 /* MVVMListTableCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMListTableCellModel.m; sourceTree = "<group>"; };
 		02251FE11E9B6CEA000B3910 /* WebOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOCViewController.h; sourceTree = "<group>"; };
 		02251FE21E9B6CEA000B3910 /* WebOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOCViewController.m; sourceTree = "<group>"; };
+		024C37C12092C637008B4813 /* RuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
+		024C37C22092C637008B4813 /* RuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
 		02502BDB1E66BE1100BAE946 /* HQNavTwoBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQNavTwoBarItem.h; sourceTree = "<group>"; };
 		02502BDC1E66BE1100BAE946 /* HQNavTwoBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQNavTwoBarItem.m; sourceTree = "<group>"; };
+		02B507492092EBDC00DECD5A /* UIButton+ResponderBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ResponderBlock.h"; sourceTree = "<group>"; };
+		02B5074A2092EBDC00DECD5A /* UIButton+ResponderBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ResponderBlock.m"; sourceTree = "<group>"; };
 		02CCEBBF1F74E6C4002C0638 /* CZNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZNotificationManager.h; sourceTree = "<group>"; };
 		02CCEBC01F74E6C4002C0638 /* CZNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZNotificationManager.m; sourceTree = "<group>"; };
 		02CF40981E1B944400FAD7A3 /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
@@ -249,6 +255,15 @@
 				0224B97C2086EB6900AEC292 /* tableViewDataSource.m */,
 			);
 			path = Protocol;
+			sourceTree = "<group>";
+		};
+		02B507482092EB9300DECD5A /* UIKitCategory */ = {
+			isa = PBXGroup;
+			children = (
+				02B507492092EBDC00DECD5A /* UIButton+ResponderBlock.h */,
+				02B5074A2092EBDC00DECD5A /* UIButton+ResponderBlock.m */,
+			);
+			path = UIKitCategory;
 			sourceTree = "<group>";
 		};
 		02CCEBBE1F74E6AB002C0638 /* 全局通知 */ = {
@@ -426,6 +441,8 @@
 				02197149208D6B7C00EF52FB /* ScoketViewController.m */,
 				0218BA6A208EC89000FBC341 /* MapViewController.h */,
 				0218BA6B208EC89000FBC341 /* MapViewController.m */,
+				024C37C12092C637008B4813 /* RuntimeViewController.h */,
+				024C37C22092C637008B4813 /* RuntimeViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -450,6 +467,7 @@
 		02E7393F1E121DE400C3F79C /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				02B507482092EB9300DECD5A /* UIKitCategory */,
 				021EC9812091697D002AAD4E /* 推送配置文件 */,
 				0214692020846D86003EBFD1 /* data */,
 				02CCEBBE1F74E6AB002C0638 /* 全局通知 */,
@@ -750,6 +768,7 @@
 				02D4F1461E28AB3F00B88005 /* CZDetailViewController.m in Sources */,
 				021557E8206B46EC00B2F8BC /* MVCModel.m in Sources */,
 				0224B9802086EEA800AEC292 /* MVVMTableViewCell.m in Sources */,
+				02B5074B2092EBDC00DECD5A /* UIButton+ResponderBlock.m in Sources */,
 				02E00790207B424B00B9BC50 /* TwoModel.m in Sources */,
 				021EC984209169A6002AAD4E /* CodeZAPNsConfigureCenter.m in Sources */,
 				02DCB7B81E027B0B007AA1DE /* ViewController.m in Sources */,
@@ -769,6 +788,7 @@
 				02E739441E121DE400C3F79C /* CodeZNavigationController.m in Sources */,
 				021557E2206B468A00B2F8BC /* MVCViewController.m in Sources */,
 				020EBCE5207C9BE90042DB12 /* commonProtocol.m in Sources */,
+				024C37C32092C637008B4813 /* RuntimeViewController.m in Sources */,
 				0218BA6C208EC89100FBC341 /* MapViewController.m in Sources */,
 				02DA964D1E237F44004AD4F9 /* CZUIAnimateViewController.m in Sources */,
 				02E739511E121EA700C3F79C /* KTOneFingerRotationGestureRecognizer.m in Sources */,

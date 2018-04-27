@@ -11,4 +11,5 @@
 @interface TwoModel : NSObject
 
 - (void)doRealThings;
+
 @end

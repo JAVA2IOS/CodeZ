@@ -8,5 +8,6 @@ pod ‘Masonry’
 pod ‘MJRefresh’
 pod 'FMDB'
 pod 'CocoaAsyncSocket'
+pod 'YYKit','~>1.0.7'
 end
 

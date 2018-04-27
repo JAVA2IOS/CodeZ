@@ -16,6 +16,7 @@
 @interface HomeController ()<UITableViewDelegate,UITableViewDataSource> {
     NSArray * controllerNames;
     NSArray * controllerTitles;
+    NSDictionary *controlelrs;
 }
 
 @end
@@ -41,8 +42,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    controllerNames = @[@"RotateViewController",@"CustomTableViewController",@"CZUIAnimateViewController",@"WebOCViewController",@"MVCViewController", @"CoreDataViewController", @"MVVMViewController", @"ScoketViewController", @"MapViewController"];
-    controllerTitles = @[@"旋转视图",@"自定义tableView",@"UI动画特效",@"原生UIWebView加载h5", @"mvc模式测试", @"coreData", @"MVVM架构", @"Scoket编程", @"MapKit使用"];
+    controlelrs = @{@"RotateViewController" : @"旋转视图",
+                    @"CustomTableViewController" : @"自定义tableView",
+                    @"CZUIAnimateViewController" : @"UI动画特效",
+                    @"CoreDataViewController" : @"原生UIWebView加载h5",
+                    @"MVVMViewController" : @"mvc模式测试",
+                    @"ScoketViewController" : @"Scoket编程",
+                    @"MapViewController" : @"MapKit使用",
+                    @"RuntimeViewController" : @"Runtime"
+                    };
+    controllerNames = @[@"RotateViewController",
+                        @"CustomTableViewController",
+                        @"CZUIAnimateViewController",
+                        @"WebOCViewController",
+                        @"MVCViewController",
+                        @"CoreDataViewController",
+                        @"MVVMViewController",
+                        @"ScoketViewController",
+                        @"MapViewController",
+                        @"RuntimeViewController"];
+    controllerTitles = @[@"旋转视图",
+                         @"自定义tableView",
+                         @"UI动画特效",
+                         @"原生UIWebView加载h5",
+                         @"mvc模式测试",
+                         @"coreData",
+                         @"MVVM架构",
+                         @"Scoket编程",
+                         @"MapKit使用",
+                         @"Runtime"];
     UITableView * table = [[UITableView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:table];
     table.delegate = self;
@@ -66,14 +94,14 @@
 
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    CodeZBaseController * vc = [[NSClassFromString([controllerNames objectAtIndex:indexPath.row]) alloc] init];
-    vc.title = [controllerTitles objectAtIndex:indexPath.row];
+    CodeZBaseController * vc = [[NSClassFromString([[controlelrs allKeys] objectAtIndex:indexPath.row]) alloc] init];
+    vc.title = controlelrs[[controlelrs allKeys][indexPath.row]];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [controllerNames count];
+    return [[controlelrs allKeys] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -87,7 +115,7 @@
     
     cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
     cell.selectedBackgroundView.backgroundColor = [UIColor grayColor];
-    cell.textLabel.text = [controllerTitles objectAtIndex:indexPath.row];
+    cell.textLabel.text = controlelrs[[controlelrs allKeys][indexPath.row]];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;   //设置cell右边箭头类型
 //    cell.accessoryType = UITableViewCellAccessoryCheckmark; // 打钩
 //    cell.accessoryType = UITableViewCellAccessoryDetailButton;  // 详细，一个按钮
