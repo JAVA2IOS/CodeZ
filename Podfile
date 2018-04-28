@@ -9,5 +9,6 @@ pod ‘MJRefresh’
 pod 'FMDB'
 pod 'CocoaAsyncSocket'
 pod 'YYKit','~>1.0.7'
+pod 'SDWebImage', '~> 3.8.1'
 end
 

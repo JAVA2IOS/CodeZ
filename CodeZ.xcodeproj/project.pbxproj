@@ -29,6 +29,7 @@
 		024C37C32092C637008B4813 /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 024C37C22092C637008B4813 /* RuntimeViewController.m */; };
 		02502BDD1E66BE1100BAE946 /* HQNavTwoBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 02502BDC1E66BE1100BAE946 /* HQNavTwoBarItem.m */; };
 		02B5074B2092EBDC00DECD5A /* UIButton+ResponderBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B5074A2092EBDC00DECD5A /* UIButton+ResponderBlock.m */; };
+		02BDBC9620940E9D006FC05D /* RuntimeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 02BDBC9520940E9D006FC05D /* RuntimeModel.m */; };
 		02CCEBC11F74E6C4002C0638 /* CZNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CCEBC01F74E6C4002C0638 /* CZNotificationManager.m */; };
 		02CF409A1E1B944400FAD7A3 /* CustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CF40991E1B944400FAD7A3 /* CustomTableViewController.m */; };
 		02CF409F1E1B980200FAD7A3 /* DynamicHeightTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 02CF409E1E1B980200FAD7A3 /* DynamicHeightTableViewCell.m */; };
@@ -123,6 +124,8 @@
 		02502BDC1E66BE1100BAE946 /* HQNavTwoBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQNavTwoBarItem.m; sourceTree = "<group>"; };
 		02B507492092EBDC00DECD5A /* UIButton+ResponderBlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+ResponderBlock.h"; sourceTree = "<group>"; };
 		02B5074A2092EBDC00DECD5A /* UIButton+ResponderBlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ResponderBlock.m"; sourceTree = "<group>"; };
+		02BDBC9420940E9D006FC05D /* RuntimeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeModel.h; sourceTree = "<group>"; };
+		02BDBC9520940E9D006FC05D /* RuntimeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeModel.m; sourceTree = "<group>"; };
 		02CCEBBF1F74E6C4002C0638 /* CZNotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZNotificationManager.h; sourceTree = "<group>"; };
 		02CCEBC01F74E6C4002C0638 /* CZNotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZNotificationManager.m; sourceTree = "<group>"; };
 		02CF40981E1B944400FAD7A3 /* CustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableViewController.h; sourceTree = "<group>"; };
@@ -290,6 +293,8 @@
 				020EBCE4207C9BE90042DB12 /* commonProtocol.m */,
 				0219714B208D8E7F00EF52FB /* ServerScoket.h */,
 				0219714C208D8E7F00EF52FB /* ServerScoket.m */,
+				02BDBC9420940E9D006FC05D /* RuntimeModel.h */,
+				02BDBC9520940E9D006FC05D /* RuntimeModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -754,6 +759,7 @@
 				02CF409A1E1B944400FAD7A3 /* CustomTableViewController.m in Sources */,
 				02E7394B1E121E5900C3F79C /* HomeController.m in Sources */,
 				02DA96501E238030004AD4F9 /* CZRotateView.m in Sources */,
+				02BDBC9620940E9D006FC05D /* RuntimeModel.m in Sources */,
 				02FA05A81E667EE6005C2B83 /* HQNavigationBar.m in Sources */,
 				0224B9752086D23E00AEC292 /* MVVMViewController.m in Sources */,
 				0224B9792086D9F800AEC292 /* ViewModel.m in Sources */,

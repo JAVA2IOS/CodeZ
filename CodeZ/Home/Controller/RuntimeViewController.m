@@ -8,6 +8,8 @@
 
 #import "RuntimeViewController.h"
 #import "UIButton+ResponderBlock.h"
+#import "NSObject+CZKVO.h"
+#import "RuntimeModel.h"
 
 @interface RuntimeViewController ()
 
@@ -28,6 +30,17 @@
         UIButton *btn = (UIButton *)responder;
         NSLog(@"你好，响应%ld, %@", btn.tag, btn.czTitle);
     }];
+    
+    RuntimeModel *runtimeModel = [[RuntimeModel alloc] init];
+    [runtimeModel cz_addObserver:self forKey:@"runtimeNumber" withBlock:^(id observerObject, NSString *observerKey, id oldValue, id newValue) {
+        NSLog(@"%@,%@", oldValue, newValue);
+    }];
+    // 直接复制有错误，报野指针，即无法传参数
+    runtimeModel.runtimeNumber = 3;
+    // 以下方法可用，可传参数
+    if ([runtimeModel respondsToSelector:@selector(setRuntimeNumber:)]) {
+//        [runtimeModel performSelector:@selector(setRuntimeNumber:) withObject:@3];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
