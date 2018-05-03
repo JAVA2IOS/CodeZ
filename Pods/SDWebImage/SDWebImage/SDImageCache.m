@@ -95,13 +95,13 @@ FOUNDATION_STATIC_INLINE NSUInteger SDCacheCostForImage(UIImage *image) {
         // initialise PNG signature data
         kPNGSignatureData = [NSData dataWithBytes:kPNGSignatureBytes length:8];
 
-        // Create IO serial queue
+        // Create IO serial queue 串行队列
         _ioQueue = dispatch_queue_create("com.hackemist.SDWebImageCache", DISPATCH_QUEUE_SERIAL);
 
-        // Init default values
+        // Init default values 缓存定期清除(默认一周)
         _maxCacheAge = kDefaultCacheMaxCacheAge;
 
-        // Init the memory cache
+        // Init the memory cache 初始化缓存，自定义缓存，继承NSCache
         _memCache = [[AutoPurgeCache alloc] init];
         _memCache.name = fullNamespace;
 

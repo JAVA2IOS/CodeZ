@@ -14,8 +14,6 @@
 #import "commonProtocol.h"
 
 @interface HomeController ()<UITableViewDelegate,UITableViewDataSource> {
-    NSArray * controllerNames;
-    NSArray * controllerTitles;
     NSDictionary *controlelrs;
 }
 
@@ -51,26 +49,6 @@
                     @"MapViewController" : @"MapKit使用",
                     @"RuntimeViewController" : @"Runtime"
                     };
-    controllerNames = @[@"RotateViewController",
-                        @"CustomTableViewController",
-                        @"CZUIAnimateViewController",
-                        @"WebOCViewController",
-                        @"MVCViewController",
-                        @"CoreDataViewController",
-                        @"MVVMViewController",
-                        @"ScoketViewController",
-                        @"MapViewController",
-                        @"RuntimeViewController"];
-    controllerTitles = @[@"旋转视图",
-                         @"自定义tableView",
-                         @"UI动画特效",
-                         @"原生UIWebView加载h5",
-                         @"mvc模式测试",
-                         @"coreData",
-                         @"MVVM架构",
-                         @"Scoket编程",
-                         @"MapKit使用",
-                         @"Runtime"];
     UITableView * table = [[UITableView alloc] initWithFrame:self.view.bounds];
     [self.view addSubview:table];
     table.delegate = self;
@@ -80,6 +58,10 @@
         // 配置iOS适配问题，可能导致留白问题
         [table setContentInsetAdjustmentBehavior:UIScrollViewContentInsetAdjustmentNever];
         table.contentInset = UIEdgeInsetsMake(64, 0, 0, 0); // 内边距
+    }
+    // 判断是否在并发队列，不能用来判断是否在主线程
+    if (strcmp(dispatch_queue_get_label(DISPATCH_CURRENT_QUEUE_LABEL), dispatch_queue_get_label(dispatch_get_main_queue()))) {
+        
     }
     /*
      // collection

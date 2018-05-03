@@ -26,6 +26,7 @@
 		0224B9832086F1BE00AEC292 /* MVVMTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B9822086F1BE00AEC292 /* MVVMTableCell.m */; };
 		0224B98620871F4B00AEC292 /* MVVMListTableCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0224B98520871F4B00AEC292 /* MVVMListTableCellModel.m */; };
 		02251FE31E9B6CEA000B3910 /* WebOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 02251FE21E9B6CEA000B3910 /* WebOCViewController.m */; };
+		022B6BF7209AE465006E49DF /* Image.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 022B6BF6209AE465006E49DF /* Image.xcassets */; };
 		024C37C32092C637008B4813 /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 024C37C22092C637008B4813 /* RuntimeViewController.m */; };
 		02502BDD1E66BE1100BAE946 /* HQNavTwoBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 02502BDC1E66BE1100BAE946 /* HQNavTwoBarItem.m */; };
 		02B5074B2092EBDC00DECD5A /* UIButton+ResponderBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 02B5074A2092EBDC00DECD5A /* UIButton+ResponderBlock.m */; };
@@ -118,6 +119,7 @@
 		0224B98520871F4B00AEC292 /* MVVMListTableCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMListTableCellModel.m; sourceTree = "<group>"; };
 		02251FE11E9B6CEA000B3910 /* WebOCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebOCViewController.h; sourceTree = "<group>"; };
 		02251FE21E9B6CEA000B3910 /* WebOCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebOCViewController.m; sourceTree = "<group>"; };
+		022B6BF6209AE465006E49DF /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Image.xcassets; sourceTree = "<group>"; };
 		024C37C12092C637008B4813 /* RuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
 		024C37C22092C637008B4813 /* RuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
 		02502BDB1E66BE1100BAE946 /* HQNavTwoBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQNavTwoBarItem.h; sourceTree = "<group>"; };
@@ -356,6 +358,7 @@
 				02DCB7C11E027B0B007AA1DE /* Info.plist */,
 				02DCB7B01E027B0B007AA1DE /* Supporting Files */,
 				02F6850F1E1F435100B6C1CB /* PrefixHeader.pch */,
+				022B6BF6209AE465006E49DF /* Image.xcassets */,
 			);
 			path = CodeZ;
 			sourceTree = "<group>";
@@ -628,7 +631,6 @@
 				TargetAttributes = {
 					02DCB7AC1E027B0B007AA1DE = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = F7WPCZ2UFH;
 						LastSwiftMigration = "";
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -682,6 +684,7 @@
 			files = (
 				02DCB7C01E027B0B007AA1DE /* LaunchScreen.storyboard in Resources */,
 				02DCB7BD1E027B0B007AA1DE /* Assets.xcassets in Resources */,
+				022B6BF7209AE465006E49DF /* Image.xcassets in Resources */,
 				02DCB7BB1E027B0B007AA1DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -948,11 +951,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CAD76E07F04F61AFF834436D /* Pods-CodeZ.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = CodeZ/CodeZ.entitlements;
-				DEVELOPMENT_TEAM = F7WPCZ2UFH;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeZ/PrefixHeader.pch";
@@ -971,11 +973,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E28ED8DDC848BE9D5B6D25ED /* Pods-CodeZ.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = CodeZ/CodeZ.entitlements;
-				DEVELOPMENT_TEAM = F7WPCZ2UFH;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/CodeZ/PrefixHeader.pch";

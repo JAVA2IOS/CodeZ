@@ -6,6 +6,9 @@
 //  Copyright © 2016年 HQExample. All rights reserved.
 //
 
+#ifndef SelfWidth
+#endif
+
 #import "CodeZBaseController.h"
 
 @interface HomeController : CodeZBaseController

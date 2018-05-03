@@ -50,9 +50,12 @@ static char imageURLStorageKey;
 
 - (void)sd_setImageWithURL:(NSURL *)url forState:(UIControlState)state placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options completed:(SDWebImageCompletionBlock)completedBlock {
 
+    // 默认设置图片
     [self setImage:placeholder forState:state];
+    // 取消当前下载的所有操作？？
     [self sd_cancelImageLoadForState:state];
     
+    // 不存在url判断
     if (!url) {
         [self.imageURLStorage removeObjectForKey:@(state)];
         
@@ -66,6 +69,7 @@ static char imageURLStorageKey;
         return;
     }
     
+    // 存储当前的url地址,key为button的state
     self.imageURLStorage[@(state)] = url;
 
     __weak __typeof(self)wself = self;

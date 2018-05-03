@@ -13,14 +13,19 @@
 #import "AFNetworking.h"
 #import "MJRefresh.h"
 #import "FMDB.h"
+#import "SDWebImageManager.h"
 #import "GCDAsyncSocket.h"
 
 #define iOS_ver [[UIDevice currentDevice].systemVersion floatValue]
 
 #define SELFVIEWWIDTH self.view.frame.size.width
 #define SELFVIEWHEIGHT self.view.frame.size.height
-#define SELFWIDTH self.frame.size.width
-#define SELFHEIGHT self.frame.size.height
+#define SELFWIDTH CGRectGetWidth([UIScreen mainScreen].bounds)
+#define SELFHEIGHT CGRectGetHeight([UIScreen mainScreen].bounds)
+#define StatusBarHeight CGRectGetHeight([UIApplication sharedApplication].statusBarFrame)
+#define StatusBarWidth CGRectGetWidth([UIApplication sharedApplication].statusBarFrame)
+#define NavigationHeight CGRectGetHeight(self.navigationController.navigationBar.frame)
+#define NavigationWidth CGRectGetHeight(self.navigationController.navigationBar.frame)
 
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 
